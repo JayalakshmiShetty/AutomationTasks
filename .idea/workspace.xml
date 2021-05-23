@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bd45387f-5f17-4596-81c1-c2cf8a900b96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApIActions/APIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApIActions/APIMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/HomePage.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ApIActions" />
       <recent name="Steps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -250,6 +253,26 @@
           <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
           <line>169</line>
           <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

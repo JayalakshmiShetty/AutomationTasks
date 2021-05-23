@@ -22,11 +22,8 @@ public class APIMethods {
             //System.out.println(taskStatus);
             if (taskStatus.equalsIgnoreCase("BTC") || taskStatus.equalsIgnoreCase("USDT") || taskStatus.equalsIgnoreCase("ETH")) {
                 list.add(idValue);
-
             }
-
         }
-
         System.out.println(list);
         return list;
     }

@@ -10,28 +10,19 @@ import static io.restassured.RestAssured.given;
 public class APITasks extends APIMethods {
     @Test
     public void verifyThatCurrenciesAreConvertedToBolivian() {
-        Response result = null;
+        Response result=null;
+        String jsonAsString;
         Response ResponseObject;
         ResponseObject = null;
-        ResponseObject = given().queryParam("CMC_PRO_API_KEY", "f2289385-e1b3-482f-95c7-4702b8137dc2")
-                .contentType("application/json").and()
-                .when().get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/map")
-                .then().and()
+        ResponseObject = given().queryParam("CMC_PRO_API_KEY", Constant.API_KEY)
+                .contentType(Constant.content)
+                .when().get(Constant.BASEURL+Constant.MAPPATH).then()
                 .statusCode(200).extract().response();
-        //Converting response as String
         List<Integer> ids=getIDFromResponse(ResponseObject);
-
         for(int id:ids){
-            result=given().queryParam("CMC_PRO_API_KEY", "f2289385-e1b3-482f-95c7-4702b8137dc2")
-            .queryParam( "convert_id", id).queryParam("amount",11)
-            .queryParam("id", 2832)
-            .contentType("application/json").when().get("https://pro-api.coinmarketcap.com/v1/tools/price-conversion")
+            result=given().queryParam("CMC_PRO_API_KEY", Constant.API_KEY)
+            .queryParam( "convert_id", id).queryParam("amount",11).queryParam("id", 2832)
+            .contentType("application/json").when().get(Constant.BASEURL+Constant.CONVERSIONPATH)
             .then().and().log().body().statusCode(200).extract().response();
-
-        }System.out.println(result.asString());
-        
-    }
-
-
-
+        }    }
 }
