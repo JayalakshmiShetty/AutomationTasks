@@ -8,16 +8,16 @@
 mvn clean verify
 ```
 
-#Execution Command (Run from Intellij terminal): -   
+## Execution Command (Run from Intellij terminal): -   
 ```
  mvn clean verify -Dcucumber.options="--tags '@Tests'"
 ```
 >Note:Based on the execution tag is configurable.
 
-#Execution From Intellij:
+## Execution From Intellij:
 > - Right click on TestRunner and click on "Run"
 > - Right click on .feature file and click on "Run" > - 
-#Required Setup:
+## Required Setup:
 > - Intellij
 > - Maven
 > -Cucumber
