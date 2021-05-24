@@ -1,4 +1,4 @@
-Feature: Criptocurrencies
+Feature: Criptocurrencies page should have 100 records
   As an end user of the coinmarketcap website
   User clicks select 100 rows
   Verify 100 rows are displaying appropriately

@@ -1,6 +1,9 @@
 Feature: Criptocurrencies
-
-
+Feature: Compare the results after filtering the data
+As an end user of the coinmarketcap website
+User should be able to click view full list options
+User should be able to filter the price of the currencies
+verify that proper results are shown on filtering
 
   @Test3 @ExistingFilter @Tests
   Scenario: Verify Criptocurrencies Ranking with Existing Filter
