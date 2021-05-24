@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bd45387f-5f17-4596-81c1-c2cf8a900b96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ApIActions/APIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApIActions/APIMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/HomePage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageClass/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageClass/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/Test1Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/Test1Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/Test2Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/Test2Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/HomePageStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/HomePageStep.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +36,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/Features" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -41,10 +44,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Runner" />
       <recent name="ApIActions" />
       <recent name="Steps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pradap\Desktop\seleniumAssessment\src\test\java\Features" />
       <recent name="C:\Users\Pradap\Desktop\seleniumAssessment\src\test\java\ApIActions" />
       <recent name="C:\Users\Pradap\Desktop\New folder (2)\Cucumber4-With-POM-master\src\test\java" />
       <recent name="C:\Users\Pradap\Desktop\New folder (2)\Cucumber4-With-POM-master\src" />
@@ -62,37 +67,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.APITasks.verifyEtherumCurrencyInfo">
-    <configuration name="Feature: HomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Feature: UI_Test3">
+    <configuration name="Feature: UI_Test3" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/HomePage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/UI_Test3.feature" />
       <option name="GLUE" value="Steps" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Cucumber4Pom" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: HomePage" />
+      <option name="SUGGESTED_NAME" value="Feature: UI_Test3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="APITasks.getMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cucumber4Pom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PageClass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PageClass" />
-      <option name="MAIN_CLASS_NAME" value="PageClass.APITasks" />
-      <option name="METHOD_NAME" value="getMethod" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,45 +102,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APITasks.verifyThatCurrenciesAreConvertedToBolivian (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test1Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cucumber4Pom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ApIActions.*" />
+          <option name="PATTERN" value="Runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ApIActions" />
-      <option name="MAIN_CLASS_NAME" value="ApIActions.APITasks" />
-      <option name="METHOD_NAME" value="verifyThatCurrenciesAreConvertedToBolivian" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.Test1Runner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APITasks.verifyThatCurrenciesAreConvertedToBolivian" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test2Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cucumber4Pom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PageClass.*" />
+          <option name="PATTERN" value="Runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="PageClass" />
-      <option name="MAIN_CLASS_NAME" value="PageClass.APITasks" />
-      <option name="METHOD_NAME" value="verifyThatCurrenciesAreConvertedToBolivian" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.Test2Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunnerAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cucumber4Pom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.TestRunnerAll" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: UI_Test3" />
+        <item itemvalue="JUnit.Test2Runner" />
+        <item itemvalue="JUnit.TestRunnerAll" />
+        <item itemvalue="JUnit.Test1Runner" />
         <item itemvalue="JUnit.APITasks.verifyEtherumCurrencyInfo" />
-        <item itemvalue="JUnit.APITasks.verifyThatCurrenciesAreConvertedToBolivian (1)" />
-        <item itemvalue="JUnit.APITasks.verifyThatCurrenciesAreConvertedToBolivian" />
-        <item itemvalue="JUnit.APITasks.getMethod" />
-        <item itemvalue="Cucumber java.Feature: HomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +208,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Steps/HomePageStep.java</url>
-          <line>48</line>
+          <line>59</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -216,42 +218,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Steps/HomePageStep.java</url>
-          <line>47</line>
+          <line>58</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
-          <line>61</line>
+          <line>73</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
-          <line>85</line>
+          <line>98</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
-          <line>90</line>
+          <line>103</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
-          <line>183</line>
+          <line>223</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
-          <line>186</line>
+          <line>226</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
-          <line>187</line>
+          <line>227</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
-          <line>169</line>
+          <line>182</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -283,6 +285,56 @@
           <url>file://$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java</url>
           <line>32</line>
           <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>200</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>203</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>204</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageClass/HomePage.java</url>
+          <line>201</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

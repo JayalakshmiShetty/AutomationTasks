@@ -13,6 +13,7 @@ import java.util.Map;
 public class HomePageStep extends HomePage {
 	Map<Integer, String[]> dataByIndustryFilter;
 	Map<Integer, String[]> rankingsData;
+	List<String> filteredPriceDetails;
 
 	@Given("I Launch CoinMarketCap")
 	public void iLaunchCoinMarketCap() {
@@ -39,7 +40,17 @@ public class HomePageStep extends HomePage {
 	public void iClickFromCryptocurrenciesDropdown(String arg0) {
 		mouseHoverOnCriptoCurrenciesTab();
 		clickOnRankingFromList(arg0);
+
+	}
+
+	@And("Record all records in the page")
+	public void recordAllRecordsInThePage() {
 		rankingsData = recordTheData();
+	}
+
+	@And("Record Price in the Page")
+	public void recordPriceInThePage() {
+		filteredPriceDetails = recordPriceData();
 	}
 
 	@And("I Launch CoinMarketCap in new browser")
@@ -66,9 +77,31 @@ public class HomePageStep extends HomePage {
 		dataByIndustryFilter = recordTheData();
 	}
 
-	@Then("Compare the Results with Ranking page")
-	public void compareTheResultsWithRankingPage() {
+
+	@Then("Verify that Results are compared with Ranking page")
+	public void verifyThatResultsAreComparedWithRankingPage() {
 		Assert.assertTrue(compareTheRankingResultsWithFilterResult(rankingsData,dataByIndustryFilter));
 		Assert.assertFalse(compareTheRankingResultsWithFilterResult(rankingsData,dataByIndustryFilter));
 	}
+
+	@And("Select Filter price Combination From {string} to {string}")
+	public void selectFilterPriceCombinationFromTo(String arg0, String arg1) throws InterruptedException {
+		clickOnFiltersButton();
+		clickOnAddFilter();
+		filterByPriceValues(arg0, arg1);
+		clickOnApplyFilter();
+
+	}
+
+	@Then("Compare the price Combination From (.*) to (.*) with Ranking page data")
+	public void compareThePriceCombinationFromToWithRankingPageData(Double fromPrice, Double toPrice) {
+
+		List<Double> filteredPrices=verifyPriceRange(filteredPriceDetails, fromPrice, toPrice);
+		for (Double filteredPrice : filteredPrices) {
+			Assert.assertTrue(filteredPrice >= fromPrice && filteredPrice <= toPrice);
+		}
+}
+
+
+
 }

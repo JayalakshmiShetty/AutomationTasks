@@ -45,8 +45,20 @@ public class HomePage {
 	@FindBy(xpath ="//input[@placeholder='Search']")
 	WebElement txtboxSearch;
 
-	@FindBy(xpath ="//*[text()='Popular Industries']/parent::div/ul/li[1]")
-	WebElement industryOption;
+	@FindBy(xpath ="//div[contains(@class,'filter-area')]/div[3]/button")
+	WebElement priceDD;
+
+	@FindBy(xpath ="//ul[contains(@class,'container')]/li[5]/button")
+	WebElement btnAddFilter;
+
+	@FindBy(xpath ="//input[@placeholder='0']")
+	WebElement txtboxPriceFrom;
+
+	@FindBy(xpath ="//input[@placeholder='99,999']")
+	WebElement txtboxPriceTo;
+
+	@FindBy(xpath ="//button[text()='Apply Filter']")
+	WebElement btnApplyFilter;
 
 	public void LaunchCoinMarketCap() {
 		driver.get("https://coinmarketcap.com/");
@@ -63,8 +75,9 @@ public class HomePage {
 				list.add(rndm);
             if(!starIcons.get(rndm).getAttribute("class").contains("is-starred")){
             	scrollToElement(starIcons.get(rndm-1));
-			TestUtil.clickElement(starIcons.get(rndm));}
-        }System.out.println(list);} }
+			TestUtil.clickElement(starIcons.get(rndm)); int id=rndm+1;
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tbody/tr/td[2]/p[text()="+ id + "]/parent::td/../td[1]/*[contains(@class,'is-starred')]")));}
+        }} }
 
 	public int getRandomIndex(int listStart, int listEnd)
 	{
@@ -176,7 +189,34 @@ public class HomePage {
 
 
 	public void clickOnFiltersButton() throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Filters']/parent::div/button[1]")));
 		TestUtil.clickElement(btnFilters);
+	}
+
+	public void clickOnAddFilter() throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[contains(@class,'container')]/li[5]/button")));
+		TestUtil.clickElement(btnAddFilter);
+	}
+
+	public void filterByPriceValues( String fromValue, String toValue) throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(priceDD));
+		priceDD.click();
+		txtboxPriceFrom.sendKeys(fromValue);
+		txtboxPriceTo.sendKeys(toValue);
+	}
+
+	public void clickOnApplyFilter() throws InterruptedException {
+		TestUtil.clickElement(btnApplyFilter);
+	}
+
+	public List<String> recordPriceData(){
+		List<WebElement> rows= driver.findElements(By.xpath("//tbody/tr"));
+		List<String> priceDetails = new ArrayList<>();
+		WebElement id=driver.findElement(By.xpath("//tbody/tr[1]/td[2]"));
+		for (WebElement row : rows) {
+			List<WebElement> cols = row.findElements(By.tagName("td"));
+			priceDetails.add(cols.get(4).getText());
+		}return priceDetails;
 	}
 
 	public void filterByIndustry(String s) throws InterruptedException {
@@ -208,5 +248,15 @@ public class HomePage {
 
 
 
+	}
+
+	public List<Double> verifyPriceRange(List<String> filteredPriceDetails, Double fromPrice, Double toPrice) {
+		List<Double> filteredPrices = new ArrayList<>();
+
+		for (String filteredPriceDetail : filteredPriceDetails) {
+			filteredPrices.add(Double.valueOf(filteredPriceDetail.substring(1)));
+		}
+
+		return filteredPrices;
 	}
 	}
