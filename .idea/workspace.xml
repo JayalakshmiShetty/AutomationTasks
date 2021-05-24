@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ApIActions/APIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApIActions/APIMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/HomePage.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +33,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/ApIActions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -63,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.APITasks.verifyThatCurrenciesAreConvertedToBolivian (1)">
+  <component name="RunManager" selected="JUnit.APITasks.verifyEtherumCurrencyInfo">
     <configuration name="Feature: HomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/HomePage.feature" />
@@ -93,6 +92,22 @@
       <option name="PACKAGE_NAME" value="PageClass" />
       <option name="MAIN_CLASS_NAME" value="PageClass.APITasks" />
       <option name="METHOD_NAME" value="getMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APITasks.verifyEtherumCurrencyInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cucumber4Pom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ApIActions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ApIActions" />
+      <option name="MAIN_CLASS_NAME" value="ApIActions.APITasks" />
+      <option name="METHOD_NAME" value="verifyEtherumCurrencyInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,28 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cucumber4Pom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Runner" />
-      <option name="MAIN_CLASS_NAME" value="Runner.Test1Runner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.APITasks.verifyEtherumCurrencyInfo" />
         <item itemvalue="JUnit.APITasks.verifyThatCurrenciesAreConvertedToBolivian (1)" />
         <item itemvalue="JUnit.APITasks.verifyThatCurrenciesAreConvertedToBolivian" />
         <item itemvalue="JUnit.APITasks.getMethod" />
         <item itemvalue="Cucumber java.Feature: HomePage" />
-        <item itemvalue="JUnit.Test1Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -273,6 +273,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java</url>
           <line>22</line>
           <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ApIActions/APIMethods.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ApIActions/APITasks.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
