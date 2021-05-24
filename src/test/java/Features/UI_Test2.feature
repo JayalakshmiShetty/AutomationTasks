@@ -1,7 +1,7 @@
 Feature: Criptocurrencies
 
 
-  @Test2
+  @Test2 @Tests
   Scenario: Verify Criptocurrencies Watchlist
     Given I Launch CoinMarketCap
     And I login with email "jayatestuser@gmail.com" and password "Password@123"

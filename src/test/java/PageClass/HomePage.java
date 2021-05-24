@@ -94,6 +94,7 @@ public class HomePage {
 	public boolean verifyThatCriptocurrenciesAreSelected(int fromId, int toId) {
 		boolean flag = false;
 		for (int i = fromId; i <=toId; i++) {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tbody/tr/td[2]/p[text()="+ i + "]")));
 			WebElement el=driver.findElement(By.xpath("//tbody/tr/td[2]/p[text()="+ i + "]"));
 			if(el.isDisplayed()){
 			flag=true;
